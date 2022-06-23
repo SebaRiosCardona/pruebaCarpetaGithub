@@ -147,21 +147,27 @@
     color: rgb(156, 155, 154);
     font-weight:bolder;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
-    backdrop-filter:blur(80px);
+    backdrop-filter:blur(100px);
     width: 93.5%;
     -webkit-text-stroke: 0.8px black;
     font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    padding-left: 30px;
-    padding-right: 30px;
     height: 33.8px;
 }
+.textoEncima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
 .tarjeta .img{
     width: 140px;
 }
 .img:hover{ 
     transition: all 1s;
     transform: scale(0.74);
-    filter: brightness(65%);
+    filter: brightness(60%);
 }
 .signoMas{
     position: absolute;
@@ -208,7 +214,7 @@
         top: 76%;
         height: 40px;
         padding-left: 40px;
-        padding-right: 40px;
+        padding-right: 40px;         
     }
     .signoMas{
         top: 81%;
@@ -243,7 +249,7 @@
         width: 17px;
         top: 86%;
         left: 83.5%;
-    }
+    }    
 }
 
 /*Pagina Contactos*/
@@ -297,7 +303,6 @@
     grid-area: textoContacto;
     display: flex;
     align-items: center;
-
 }
 .textoContacto .texto{
     text-align:justify;
