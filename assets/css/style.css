@@ -142,7 +142,7 @@
 }
 .tarjeta .textoEncima{
     position: absolute;
-    top: 72%;
+    top: 74%;
     font-size: 10px;
     color: rgb(156, 155, 154);
     font-weight:bolder;
@@ -215,7 +215,7 @@
     .tarjeta .textoEncima{
         font-size: 14px;
         width: 95%;
-        top: 76%;
+        top: 78%;
         height: 40px;
         padding-left: 40px;
         padding-right: 40px;         
@@ -240,7 +240,7 @@
     .tarjeta .textoEncima{
         font-size: 18px;
         width: 96%;
-        top: 78%;
+        top: 79%;
         height: 45px;
         padding-left: 45px;
         padding-right: 45px;
