@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/imagenSitioWeb.png" type="image/x-icon">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navBarraGeneral">
+        <div class="logo">
+            <img src="../assets/img/imagenLogo.png" alt="">
+        </div>
+        <ul class="indice">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../paginas/nosotros.html">Nosotros</a></li>
+            <li><a href="../paginas/uneteANosotros.html">Unete a nosotros</a></li>
+            <li><a href="../paginas/productos.html">Productos</a></li>
+            <li><a href="../paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>  
+
+    <header>
+
+    </header>
+
+    <main class="contenedorContacto">
+        <form class="formulario" action="" method="get">
+            <fieldset class="elementosFormularioContacto">
+               
+                
+                <select class="opciones" name="motivo">
+                    <option value="Consulta">Consulta</option>
+                    <option value="Sugerencia">Sugerencia</option>
+                    <option value="Quiero ser parte">Quiero ser parte</option>
+                </select>
+
+
+
+                <div class="textoContacto">
+                    <h3 class="texto">Con gusto CANVA responderá tus consultas y analizara tus opiniones. Si estas interesado en formar parte de
+                    esta gran comunidad dejamos tus datos y nos pondremos en contacto a
+                    la brevedad</h3>
+                </div>
+
+                <div class="preguntas">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
+
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+                    <input type="number" name="Telefono" id="telefono" placeholder="Telefono" required>
+
+                    <input type="email" name="email" id="email" placeholder="email" required>
+
+                </div>
+
+                <textarea class="comentario" name="comentario" id="comentario" cols="30" rows="10" placeholder=" Comentario"></textarea>
+                
+
+
+                <div class="terminosContacto">
+                    <label for="acepto">Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="acepto" value="acepto" required>
+                </div>
+
+
+                <div class="botonEnviar">
+                    <input type="submit" value="Enviar">
+                </div>
+                <div class="botonReiniciar">
+                    <input type="reset" value="Reiniciar el formulario">
+                </div>
+            </fieldset>
+        </form>
+        <br>
+        
+    </main>
+    <aside>
+        
+    </aside>
+    <footer class="footer">
+        <h5>&#169 todos los derechos reservados</h5>
+    </footer>
+</body>
+</html>

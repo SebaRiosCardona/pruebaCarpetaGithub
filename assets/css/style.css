@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedorIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: "navBarraIndex navBarraIndex navBarraIndex"
+                         "cuerpoIndex cuerpoIndex cuerpoIndex"
+                         "footer footer footer";
+}
+.navBarraIndex{
+    grid-area: navBarraIndex;
+    width: 100%;
+    background-color: tan;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBarraIndex ul{
+    list-style: none;
+    display: flex;
+}
+.navBarraIndex ul li {
+    padding: 15px;
+}
+.navBarraIndex ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 11px;
+}
+@media(min-width: 538px){
+    .navBarraIndex ul li a{
+        font-size: 16px;
+    }
+}
+
+.cuerpoIndex{
+    grid-area: cuerpoIndex;
+}
+.logo img{
+    width: 117px;
+    margin-top: 3px;
+}
+.imagenGrandeCuerpo{
+    background-image: url(../img/imagenDeLaPaginaPrincipal3.avif);
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.imagenGrandeCuerpo h1{
+    color: rgb(255, 255, 0);
+    border-color: black;
+    font-size: 60px;
+    margin-top: 140px;
+    -webkit-text-stroke: 1.0px black;    
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.imagenGrandeCuerpo .botonDeCompra{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    align-self:flex-end;
+    margin-bottom: 150px;
+    width: 375px;
+    height: 67px;
+    font-size: 50px;
+    background-color: transparent;
+    color: wheat;
+    -webkit-text-stroke: 1.1px black;
+    border-radius: 14px;
+    border-color:black;
+    border-style:solid;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+
+
+/* Pagina Producto*/
+.contenedorProducto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: "navBarraGeneral navBarraGeneral navBarraGeneral navBarraGeneral"
+                         "cuerpoProducto cuerpoProducto cuerpoProducto barraCostado"
+                         "footer footer footer footer";
+}
+
+.navBarraGeneral{
+    grid-area: navBarraGeneral;
+    width: 100%;
+    height: 70px;
+    background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.navBarraGeneral ul{
+    list-style: none;
+    display: flex;
+}
+.navBarraGeneral ul li {
+    padding: 15px;
+}
+.navBarraGeneral ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 11px;
+}
+
+.barraCostado{
+    grid-area: barraCostado;
+    padding: 10px;
+    border: 3px solid burlywood;
+}
+
+.cuerpoProducto{
+    grid-area: cuerpoProducto;
+}
+.cuerpoProducto .tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.tarjetas .tarjeta{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.tarjeta .textoEncima{
+    position: absolute;
+    top: 72%;
+    font-size: 15px;
+    color: rgb(156, 155, 154);
+    font-weight:bolder;
+    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
+    backdrop-filter:blur(80px);
+    width: 93.5%;
+    -webkit-text-stroke: 0.8px black;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tarjeta .img{
+    width: 140px;
+}
+.img:hover{ 
+    transition: all 1s;
+    transform: scale(0.74);
+    filter: brightness(65%);
+}
+
+
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items:flex-end;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+.footer h5{
+    color: rgb(255, 255, 255);
+}
+
+
+@media(min-width: 570px){
+    .tarjeta .img{
+        width: 190px;
+    }
+    .img:hover{ 
+        transition: all 1s;
+        transform: scale(0.78);
+    }
+    .tarjeta .textoEncima{
+        font-size: 17px;
+        width: 95%;
+        top: 76%;
+    }
+}
+@media(min-width: 916px){
+    .tarjeta .img{
+        width: 230px;
+    }
+    .img:hover{ 
+        transition: all 1s;
+        transform: scale(0.80);
+    }
+    .tarjeta .textoEncima{
+        font-size: 20px;
+        width: 96%;
+        top: 78%;
+    }
+}
+
+/*Pagina Contactos*/
+.contenedorContacto{
+    background: rgba(110, 110, 110, 50) url(../img/imagenDeLaPaginaPrincipal3.avif);
+    background-blend-mode:exclusion;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.formulario{
+    background-color: white;
+}
+@media(min-width: 467px){
+    .formulario{
+        width: 467px;
+    }
+}
+
+.elementosFormularioContacto{
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid black;  
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    grid-template-rows: 30px auto 1fr 35px 35px;
+    grid-template-areas: "opciones opciones"
+                         "textoContacto preguntas"
+                         "comentario comentario"
+                         "terminosContacto terminosContacto"
+                         "botonEnviar botonReiniciar";
+}
+.opciones{
+    grid-area: opciones;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 14px helvetica;
+    padding: 5px;
+    color: #8d8d8d;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.textoContacto{
+    grid-area: textoContacto;
+    display: flex;
+    align-items: center;
+
+}
+.textoContacto .texto{
+    text-align:justify;
+    font-size: 17px;
+    font-family: HelveticaNeue,Helvetica!important;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(82, 82, 82);
+    margin-top: 20px;
+}
+
+.preguntas{
+    grid-area: preguntas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    color: #8d8d8d;    
+}
+.preguntas input{
+    width: 100%;
+    margin: 10px;
+    font: 14px helvetica;
+    padding: 5px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.comentario{
+    grid-area: comentario;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 14px helvetica;
+    padding: 5px;
+    color: #8d8d8d;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 150px;
+}
+
+.terminosContacto{
+    grid-area: terminosContacto;
+    color: #8d8d8d;
+    font-size: 14px;
+}
+
+.botonEnviar{
+    grid-area: botonEnviar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonReiniciar{
+    grid-area: botonReiniciar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media(min-width: 538px){
+    .navBarraGeneral ul li a{
+        font-size: 16px;
+    }
+}
+
+
+/*Pagina Nosotros*/
+
+.contenedorMain{
+    background: rgba(110, 110, 110, 50) url(../img/imagenDeLaPaginaPrincipal3.avif);
+    display:flex;
+    justify-content: center;
+    background-blend-mode:exclusion;
+}
+
+
+.fondoNoOpaco{
+    background-color: white;
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px;
+}
+@media(min-width: 467px){
+    .fondoNoOpaco{
+        width: 467px;
+    }
+}
+
+.queEsCanva{
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    padding: 32px 0 26px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.textoQueEsCanva{
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    font-family: HelveticaNeue,Helvetica!important;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(82, 82, 82);
+    margin-top: 10px;
+}
+
+.imgQueEsCanva{
+    display: flex;
+    justify-content: center;
+}
+
+.mision{
+    display: flex;
+    justify-content: center;
+    color: #111;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    padding: 32px 0 20px;
+    font-size: 22px;
+}
+.textoMision{
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 17px;
+    font-family: HelveticaNeue,Helvetica!important;
+    line-height: 22px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(82, 82, 82);
+}
+
+.encontranos{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #111;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    padding: 32px 0 20px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.contenedorMapaNosotros{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+.mapaNosotros{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+@media(min-width: 700px){
+    .mapaNosotros{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+}
+
+/*Pagina Unete a nosotros*/
+
+.seParte{
+    color: #111;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    line-height: 26px;
+    margin: 0 auto;
+    padding: 32px 0 26px;
+    text-align: center;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+.textoSeParte{
+    font-family: HelveticaNeue,Helvetica!important;
+    line-height: 22px;
+    font-weight: 400;
+    padding-bottom: 27px;
+    text-align: center;
+    color: #8d8d8d;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Preguntas1UneteANosotros{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.Preguntas1UneteANosotros input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 14px helvetica;
+    padding: 5px;
+    color: #8d8d8d;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 40px;
+}
+.textoFechaCumpleaños{
+    text-align:justify;
+    color: #8d8d8d;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 3px 0 24px;
+    text-align: center;
+}
+
+
+
+.PoliticasYTerminos{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.PoliticasYTerminos .textoPoliticasYTerminos{
+    text-align:justify;
+    color: #8d8d8d;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 3px 0 24px;
+    text-align: center;
+}
+
+
+.Unite{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+.Unite .botonUnite{
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.IniciarSesion{
+    color: grey;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+.IniciarSesion p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
