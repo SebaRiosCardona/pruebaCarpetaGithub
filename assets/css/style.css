@@ -143,7 +143,7 @@
 .tarjeta .textoEncima{
     position: absolute;
     top: 72%;
-    font-size: 15px;
+    font-size: 10px;
     color: rgb(156, 155, 154);
     font-weight:bolder;
     -webkit-text-stroke: 0.5px rgb(0, 0, 0);
@@ -153,6 +153,7 @@
     font-family: TradeGothicforNike365-BdCn,Helvetica!important;
     padding-left: 30px;
     padding-right: 30px;
+    height: 33.8px;
 }
 .tarjeta .img{
     width: 140px;
@@ -161,6 +162,20 @@
     transition: all 1s;
     transform: scale(0.74);
     filter: brightness(65%);
+}
+.signoMas{
+    position: absolute;
+    width: 17px;
+    top: 78%;
+    left: 9%;
+    z-index: 2;
+}
+.signoMenos{
+    position: absolute;
+    width: 17px;
+    top: 83%;
+    left: 80%;
+    z-index: 2;
 }
 
 
@@ -188,9 +203,20 @@
         transform: scale(0.78);
     }
     .tarjeta .textoEncima{
-        font-size: 17px;
+        font-size: 14px;
         width: 95%;
         top: 76%;
+        height: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .signoMas{
+        top: 81%;
+        left: 9%;
+    }
+    .signoMenos{
+        width: 17px;
+        top: 85%;
     }
 }
 @media(min-width: 916px){
@@ -202,9 +228,21 @@
         transform: scale(0.80);
     }
     .tarjeta .textoEncima{
-        font-size: 20px;
+        font-size: 18px;
         width: 96%;
         top: 78%;
+        height: 45px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .signoMas{
+        top: 83%;
+        left: 9%;
+    }
+    .signoMenos{
+        width: 17px;
+        top: 86%;
+        left: 83.5%;
     }
 }
 
