@@ -171,7 +171,7 @@
 .botonCondimento:hover{ 
     transition: all 1s;
     transform: scale(0.74);
-    filter: brightness(60%);
+    filter: brightness(90%);
 }
 /*.signoMas{
     position: absolute;
@@ -577,4 +577,18 @@
     margin-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/*Animacion*/
+.logo{
+    animation-name: ingresaElLogo;
+    animation-duration: 2s;
+}
+@keyframes ingresaElLogo { /*Esta animacion se la puedo aplicar a cualquier elemento que quiera, siempre y cuando agrega la propiedad "animation-name" */
+    0%{
+        transform: translate(-100px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
 }
