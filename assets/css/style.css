@@ -3,259 +3,201 @@
     padding: 0;
     box-sizing: border-box;
 }
-.contenedorIndex{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70px auto auto;
-    grid-template-areas: "navBarraIndex navBarraIndex navBarraIndex"
-                         "cuerpoIndex cuerpoIndex cuerpoIndex"
-                         "footer footer footer";
-}
-.navBarraIndex{
-    grid-area: navBarraIndex;
-    width: 100%;
-    background-color: tan;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navBarraIndex ul{
-    list-style: none;
-    display: flex;
-}
-.navBarraIndex ul li {
-    padding: 15px;
-}
-.navBarraIndex ul li a{
-    text-decoration: none;
-    color:black;
-    font-size: 11px;
-}
-@media(min-width: 538px){
-    .navBarraIndex ul li a{
-        font-size: 16px;
-    }
+
+/**/
+.navbarTodos{
+    padding: 0 !important;
+    background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
+    height: auto;
 }
 
-.cuerpoIndex{
-    grid-area: cuerpoIndex;
+.navbarIndex{
+    padding: 0 !important;
+    height: auto;
 }
-.logo img{
-    width: 117px;
-    margin-top: 3px;
-}
+/**/
+
 .imagenGrandeCuerpo{
-    background-image: url(../img/imagenDeLaPaginaPrincipal3.avif);
-    height: 900px;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
-    align-items:flex-start;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
 }
-.imagenGrandeCuerpo h1{
-    color: rgb(255, 255, 0);
-    border-color: black;
-    font-size: 60px;
-    margin-top: 140px;
-    -webkit-text-stroke: 1.0px black;    
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-}
-
 .imagenGrandeCuerpo .botonDeCompra{
     display: flex;
     justify-content: center;
-    position:absolute;
-    align-self:flex-end;
-    margin-bottom: 150px;
-    width: 375px;
-    height: 67px;
-    font-size: 50px;
-    background-color: transparent;
-    color: wheat;
-    -webkit-text-stroke: 1.1px black;
+    align-items: center;
+    width: 90%;
+    height: 45px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
     border-radius: 14px;
     border-color:black;
-    border-style:solid;
-    font-weight:bolder;
+    border-style:ridge;
     text-decoration: none;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-size: 18px;
+    font-weight: 800;
 }
+@media(min-width: 467px){
+    .imagenGrandeCuerpo .botonDeCompra{
+        font-size: 18px;
+        height: 45px;
+        width: 417px;
+    }
+}
+
+.textoIndex{
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.contenedorLineaSeparacion{
+    display: flex;
+    justify-content: center;
+}
+.lineaSeparacion{
+    width: 90%;
+}
+
+
 
 
 
 /* Pagina Producto*/
-.contenedorProducto{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
-    grid-template-rows: 70px auto auto;
-    grid-template-areas: "navBarraGeneral navBarraGeneral navBarraGeneral navBarraGeneral"
-                         "cuerpoProducto cuerpoProducto cuerpoProducto barraCostado"
-                         "footer footer footer footer";
+.colorLetra{
+    color: white;
+}
+.navbar-toggler{
+    background-color: #BFBFBF;
 }
 
-.navBarraGeneral{
-    grid-area: navBarraGeneral;
-    width: 100%;
-    height: 70px;
-    background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-.navBarraGeneral ul{
-    list-style: none;
-    display: flex;
-}
-.navBarraGeneral ul li {
-    padding: 15px;
-}
-.navBarraGeneral ul li a{
-    text-decoration: none;
-    color:white;
-    font-size: 11px;
-}
-
-.barraCostado{
-    grid-area: barraCostado;
-    padding: 10px;
-    border: 3px solid burlywood;
-}
-
-.cuerpoProducto{
-    grid-area: cuerpoProducto;
-}
-.cuerpoProducto .tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
-.tarjetas .tarjeta{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-}
-.tarjeta .textoEncima{
-    position: absolute;
-    top: 74%;
+.nombretarjeta{
+    color: black;
     font-size: 10px;
-    color: rgb(156, 155, 154);
-    font-weight:bolder;
-    -webkit-text-stroke: 0.5px rgb(0, 0, 0);
-    backdrop-filter:blur(100px);
-    width: 93.5%;
-    -webkit-text-stroke: 0.8px black;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    height: 33.8px;
+    backdrop-filter:blur(10px);
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
 }
-.textoEncima{
+.card-img-overlay{
+    padding: 0px;
+}
+.cuerpoProducto{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding: 0px;
+    margin: 0px;
+    border: 0 solid transparent;
+
+}
+.cadaTarjeta{
+    margin: 2px;
+    padding: 0px;
+    border: 0 solid transparent;
 }
 
-.tarjeta .img{
-    width: 140px;
+.contenedorCarritoDeCompra{
+    padding: 0px;
+    border-left: 2px solid black;
+}
+.textoCarritoDeCompra{
+    font-size: 12px;
+    margin: 10px;
+}
+.contenedorCompra{
+    padding: 10px;
 }
 
-.botonCondimento{
-    border: none;
+.contenedorMas{
+    display: flex;
 }
-.botonCondimento:hover{ 
-    transition: all 1s;
-    transform: scale(0.74);
-    filter: brightness(90%);
+.botonMas{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    backdrop-filter:blur(100px);
+    border: 0;
+    margin: 30px;
 }
-/*.signoMas{
-    position: absolute;
-    width: 17px;
-    top: 78%;
-    left: 9%;
-    z-index: 2;
+
+@media(min-width: 467px){
+    .botonMas{
+        margin: 57px;
+    }
+    .nombretarjeta{
+        color: black;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
-.signoMenos{
-    position: absolute;
-    width: 17px;
-    top: 83%;
-    left: 80%;
-    z-index: 2;
-}*/
+@media(min-width: 576px){
+    .botonMas{
+        margin: 75px;
+    }
+    .nombretarjeta{
+        color: black;
+        font-size: 13px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media(min-width: 768px){
+    .botonMas{
+        margin: 75px;
+    }
+    .nombretarjeta{
+        color: black;
+        font-size: 14px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media(min-width: 992px){
+    .botonMas{
+        margin: 110px;
+    }
+    .nombretarjeta{
+        color: black;
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+@media(min-width: 1200px){
+    .botonMas{
+        margin: 90px;
+    }
+}
+@media(min-width: 1400px){
+    .botonMas{
+        margin: 65px;
+    }
+}
+
+
+
+
 
 
 
 .footer{
     grid-area: footer;
     width: 100%;
-    background-color: black;
+    background-color: #BFBFBF;
     display: flex;
-    align-items:flex-end;
-    padding-bottom: 5px;
-    padding-left: 5px;
+    justify-content: center;
+    font-family: HelveticaNeue,Helvetica!important;
 }
-.footer h5{
-    color: rgb(255, 255, 255);
+.footer .p{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
 }
 
 
-@media(min-width: 570px){
-    .tarjeta .img{
-        width: 190px;
-    }
-    .botonCondimento:hover{ 
-        transition: all 1s;
-        transform: scale(0.78);
-    }
-    .tarjeta .textoEncima{
-        font-size: 14px;
-        width: 95%;
-        top: 78%;
-        height: 40px;
-        padding-left: 40px;
-        padding-right: 40px;         
-    }
-    .signoMas{
-        top: 81%;
-        left: 9%;
-    }
-    .signoMenos{
-        width: 17px;
-        top: 85%;
-    }
-}
-@media(min-width: 916px){
-    .tarjeta .img{
-        width: 230px;
-    }
-    .botonCondimento:hover{ 
-        transition: all 1s;
-        transform: scale(0.80);
-    }
-    .tarjeta .textoEncima{
-        font-size: 18px;
-        width: 96%;
-        top: 79%;
-        height: 45px;
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-    .signoMas{
-        top: 83%;
-        left: 9%;
-    }
-    .signoMenos{
-        width: 17px;
-        top: 86%;
-        left: 83.5%;
-    }    
-}
+
 
 /*Pagina Contactos*/
 .contenedorContacto{
