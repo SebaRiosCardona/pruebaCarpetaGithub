@@ -10,11 +10,6 @@
     background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
     height: auto;
 }
-
-.navbarIndex{
-    padding: 0 !important;
-    height: auto;
-}
 /**/
 
 .imagenGrandeCuerpo{
@@ -51,6 +46,8 @@
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+    font-size: 20px;
+    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
 }
 
 .contenedorLineaSeparacion{
@@ -65,7 +62,7 @@
 
 
 /* Pagina Producto*/
-.colorLetra{
+.colorLetraNavbar{
     color: white;
 }
 .navbar-toggler{
