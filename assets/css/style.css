@@ -1,533 +1,496 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /**/
-.navbarTodos{
-    padding: 0 !important;
-    background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
-    height: auto;
+.navbarTodos {
+  padding: 0 !important;
+  background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
+  height: auto;
 }
-/**/
 
-.imagenGrandeCuerpo{
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+.colorLetraNavbar {
+  color: white;
 }
-.imagenGrandeCuerpo .botonDeCompra{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 45px;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    border-radius: 14px;
-    border-color:black;
-    border-style:ridge;
-    text-decoration: none;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+
+.footer {
+  grid-area: footer;
+  width: 100%;
+  background-color: #BFBFBF;
+  display: flex;
+  justify-content: center;
+  font-family: HelveticaNeue, Helvetica !important;
+}
+
+.footer .p {
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+}
+
+/*index*/
+.mainIndex .imagenGrandeCuerpo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.mainIndex .botonDeCompra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 45px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  border-radius: 14px;
+  border-color: black;
+  border-style: ridge;
+  text-decoration: none;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-size: 18px;
+  font-weight: 800;
+}
+.mainIndex .textoIndex {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+}
+.mainIndex .contenedorLineaSeparacion {
+  display: flex;
+  justify-content: center;
+}
+.mainIndex .contenedorLineaSeparacion .lineaSeparacion {
+  width: 90%;
+}
+
+@media (min-width: 467px) {
+  .imagenGrandeCuerpo .botonDeCompra {
     font-size: 18px;
-    font-weight: 800;
+    height: 45px;
+    width: 417px;
+  }
 }
-@media(min-width: 467px){
-    .imagenGrandeCuerpo .botonDeCompra{
-        font-size: 18px;
-        height: 45px;
-        width: 417px;
-    }
-}
-
-.textoIndex{
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-    font-size: 20px;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+/*producto*/
+.cuerpoProducto {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  border: 0 solid transparent;
 }
 
-.contenedorLineaSeparacion{
-    display: flex;
-    justify-content: center;
-}
-.lineaSeparacion{
-    width: 90%;
+.cadaTarjeta {
+  margin: 2px;
+  padding: 0px;
+  border: 0 solid transparent;
 }
 
-
-
-
-/* Pagina Producto*/
-.colorLetraNavbar{
-    color: white;
-}
-.navbar-toggler{
-    background-color: #BFBFBF;
+.card-img-overlay {
+  padding: 0px;
 }
 
-.nombretarjeta{
+.nombretarjeta {
+  color: black;
+  font-size: 10px;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.contenedorMas {
+  display: flex;
+}
+
+.botonMas {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  backdrop-filter: blur(100px);
+  border: 0;
+  margin: 30px;
+}
+
+@media (min-width: 467px) {
+  .botonMas {
+    margin: 57px;
+  }
+
+  .nombretarjeta {
     color: black;
-    font-size: 10px;
-    backdrop-filter:blur(10px);
-    margin: 0;
+    font-size: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 100%;
+  }
 }
-.card-img-overlay{
-    padding: 0px;
-}
-.cuerpoProducto{
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    border: 0 solid transparent;
+@media (min-width: 576px) {
+  .botonMas {
+    margin: 75px;
+  }
 
-}
-.cadaTarjeta{
-    margin: 2px;
-    padding: 0px;
-    border: 0 solid transparent;
-}
-
-.contenedorCarritoDeCompra{
-    padding: 0px;
-    border-left: 2px solid black;
-}
-.textoCarritoDeCompra{
-    font-size: 12px;
-    margin: 10px;
-}
-.contenedorCompra{
-    padding: 10px;
-}
-
-.contenedorMas{
-    display: flex;
-}
-.botonMas{
-    width: 25px;
-    height: 25px;
-    padding: 0;
-    backdrop-filter:blur(100px);
-    border: 0;
-    margin: 30px;
-}
-
-@media(min-width: 467px){
-    .botonMas{
-        margin: 57px;
-    }
-    .nombretarjeta{
-        color: black;
-        font-size: 12px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
-@media(min-width: 576px){
-    .botonMas{
-        margin: 75px;
-    }
-    .nombretarjeta{
-        color: black;
-        font-size: 13px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
-@media(min-width: 768px){
-    .botonMas{
-        margin: 75px;
-    }
-    .nombretarjeta{
-        color: black;
-        font-size: 14px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
-@media(min-width: 992px){
-    .botonMas{
-        margin: 110px;
-    }
-    .nombretarjeta{
-        color: black;
-        font-size: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-}
-@media(min-width: 1200px){
-    .botonMas{
-        margin: 90px;
-    }
-}
-@media(min-width: 1400px){
-    .botonMas{
-        margin: 65px;
-    }
-}
-
-
-
-
-
-
-
-.footer{
-    grid-area: footer;
-    width: 100%;
-    background-color: #BFBFBF;
-    display: flex;
-    justify-content: center;
-    font-family: HelveticaNeue,Helvetica!important;
-}
-.footer .p{
-    color: rgb(0, 0, 0);
+  .nombretarjeta {
+    color: black;
     font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
+@media (min-width: 768px) {
+  .botonMas {
+    margin: 75px;
+  }
 
-
-
-
-/*Pagina Contactos*/
-.contenedorContacto{
-    background: rgba(110, 110, 110, 50) url(../img/imagenDeLaPaginaPrincipal3.avif);
-    background-blend-mode:exclusion;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
-}
-
-.formulario{
-    background-color: white;
-}
-@media(min-width: 467px){
-    .formulario{
-        width: 467px;
-    }
-}
-
-.elementosFormularioContacto{
-    padding: 20px;
-    justify-content: center;
-    width: 100%;
-    border: 2px solid black;  
-    gap: 20px;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    grid-template-rows: 30px auto 1fr 35px 35px;
-    grid-template-areas: "opciones opciones"
-                         "textoContacto preguntas"
-                         "comentario comentario"
-                         "terminosContacto terminosContacto"
-                         "botonEnviar botonReiniciar";
-}
-.opciones{
-    grid-area: opciones;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: 14px helvetica;
-    padding: 5px;
-    color: #8d8d8d;
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 40px;
-}
-
-.textoContacto{
-    grid-area: textoContacto;
-    display: flex;
-    align-items: center;
-}
-.textoContacto .texto{
-    text-align:justify;
-    font-size: 17px;
-    font-family: HelveticaNeue,Helvetica!important;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(82, 82, 82);
-    margin-top: 20px;
-}
-
-.preguntas{
-    grid-area: preguntas;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-    color: #8d8d8d;    
-}
-.preguntas input{
-    width: 100%;
-    margin: 10px;
-    font: 14px helvetica;
-    padding: 5px;
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 40px;
-}
-
-.comentario{
-    grid-area: comentario;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: 14px helvetica;
-    padding: 5px;
-    color: #8d8d8d;
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 150px;
-}
-
-.terminosContacto{
-    grid-area: terminosContacto;
-    color: #8d8d8d;
+  .nombretarjeta {
+    color: black;
     font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
+@media (min-width: 992px) {
+  .botonMas {
+    margin: 110px;
+  }
 
-.botonEnviar{
-    grid-area: botonEnviar;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.botonReiniciar{
-    grid-area: botonReiniciar;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-@media(min-width: 538px){
-    .navBarraGeneral ul li a{
-        font-size: 16px;
-    }
-}
-
-
-/*Pagina Nosotros*/
-
-.contenedorMain{
-    background: rgba(110, 110, 110, 50) url(../img/imagenDeLaPaginaPrincipal3.avif);
-    display:flex;
-    justify-content: center;
-    background-blend-mode:exclusion;
-}
-
-
-.fondoNoOpaco{
-    background-color: white;
-    width: 100%;
-    border: 2px solid black;
-    margin: 10px;
-}
-@media(min-width: 467px){
-    .fondoNoOpaco{
-        width: 467px;
-    }
-}
-
-.queEsCanva{
-    display: flex;
-    justify-content: center;
-    color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    padding: 32px 0 26px;
-    font-weight: 700;
-    font-size: 24px;
-}
-.textoQueEsCanva{
-    display: flex;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 17px;
-    font-family: HelveticaNeue,Helvetica!important;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(82, 82, 82);
-    margin-top: 10px;
-}
-
-.imgQueEsCanva{
-    display: flex;
-    justify-content: center;
-}
-
-.mision{
-    display: flex;
-    justify-content: center;
-    color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    padding: 32px 0 20px;
-    font-size: 22px;
-}
-.textoMision{
-    display: flex;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 17px;
-    font-family: HelveticaNeue,Helvetica!important;
-    line-height: 22px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(82, 82, 82);
-}
-
-.encontranos{
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    padding: 32px 0 20px;
-    font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.contenedorMapaNosotros{
-    display: flex;
-    justify-content: center;
-    width: 100%
-}
-.mapaNosotros{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-@media(min-width: 700px){
-    .mapaNosotros{
-        width: 300px;
-        height: 300px;
-        margin-bottom: 10px;
-    }
-}
-
-/*Pagina Unete a nosotros*/
-
-.seParte{
-    color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-    line-height: 26px;
-    margin: 0 auto;
-    padding: 32px 0 26px;
-    text-align: center;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-.textoSeParte{
-    font-family: HelveticaNeue,Helvetica!important;
-    line-height: 22px;
-    font-weight: 400;
-    padding-bottom: 27px;
-    text-align: center;
-    color: #8d8d8d;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.Preguntas1UneteANosotros{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.Preguntas1UneteANosotros input{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: 14px helvetica;
-    padding: 5px;
-    color: #8d8d8d;
-    border: 1px solid #e5e5e5;
-    background-color: #fff;
-    border-radius: 4px;
-    height: 40px;
-}
-.textoFechaCumpleaños{
-    text-align:justify;
-    color: #8d8d8d;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 3px 0 24px;
-    text-align: center;
-}
-
-
-
-.PoliticasYTerminos{
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.PoliticasYTerminos .textoPoliticasYTerminos{
-    text-align:justify;
-    color: #8d8d8d;
-    font-size: 14px;
-    line-height: 16px;
-    padding: 3px 0 24px;
-    text-align: center;
-}
-
-
-.Unite{
-    display: flex;
-    justify-content: center;
-    margin: 5px 0;
-}
-.Unite .botonUnite{
-    background-color: #000;
-    border: 1px solid #000;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+  .nombretarjeta {
+    color: black;
     font-size: 15px;
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .botonMas {
+    margin: 90px;
+  }
+}
+@media (min-width: 1400px) {
+  .botonMas {
+    margin: 65px;
+  }
+}
+.contenedorCarritoDeCompra {
+  padding: 0px;
+  border-left: 2px solid black;
+}
+.contenedorCarritoDeCompra .textoCarritoDeCompra {
+  font-size: 12px;
+  margin: 10px;
+}
+.contenedorCarritoDeCompra .contenedorCompra {
+  padding: 10px;
 }
 
-.IniciarSesion{
-    color: grey;
-    font-size: 13px;
-    display: flex;
-    justify-content: center;
+/*Contacto*/
+.contenedorContacto {
+  background: rgb(110, 110, 110) url(../img/imagenDeLaPaginaPrincipal3.avif);
+  background-blend-mode: exclusion;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
 }
-.IniciarSesion p{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+.contenedorContacto .formulario {
+  background-color: white;
+}
+.contenedorContacto .formulario .elementosFormularioContacto {
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid black;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: 30px auto 1fr 35px 35px;
+  grid-template-areas: "opciones opciones" "textoContacto preguntas" "comentario comentario" "terminosContacto terminosContacto" "botonEnviar botonReiniciar";
+}
+.contenedorContacto .formulario .elementosFormularioContacto .opciones {
+  grid-area: opciones;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: 14px helvetica;
+  padding: 5px;
+  color: #8d8d8d;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .textoContacto {
+  grid-area: textoContacto;
+  display: flex;
+  align-items: center;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .textoContacto .texto {
+  text-align: justify;
+  font-size: 17px;
+  font-family: HelveticaNeue, Helvetica !important;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(82, 82, 82);
+  margin-top: 20px;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .preguntas {
+  grid-area: preguntas;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  color: #8d8d8d;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .preguntas input {
+  width: 100%;
+  margin: 10px;
+  font-size: 14px;
+  font-family: helvetica;
+  padding: 5px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .comentario {
+  grid-area: comentario;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: 14px helvetica;
+  padding: 5px;
+  color: #8d8d8d;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 150px;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .terminosContacto {
+  grid-area: terminosContacto;
+  color: #8d8d8d;
+  font-size: 14px;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .botonEnviar {
+  grid-area: botonEnviar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedorContacto .formulario .elementosFormularioContacto .botonReiniciar {
+  grid-area: botonReiniciar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*Animacion*/
-.logo{
-    animation-name: ingresaElLogo;
-    animation-duration: 2s;
+@media (min-width: 467px) {
+  .formulario {
+    width: 467px;
+  }
 }
-@keyframes ingresaElLogo { /*Esta animacion se la puedo aplicar a cualquier elemento que quiera, siempre y cuando agrega la propiedad "animation-name" */
-    0%{
-        transform: translate(-100px,0);
-    }
-    100%{
-        transform: translate(0,0);
-    }
+@media (min-width: 538px) {
+  .navBarraGeneral ul li a {
+    font-size: 16px;
+  }
 }
+/*Nosotros*/
+.contenedorMain {
+  background: rgb(110, 110, 110) url(../img/imagenDeLaPaginaPrincipal3.avif);
+  display: flex;
+  justify-content: center;
+  background-blend-mode: exclusion;
+}
+
+.fondoNoOpaco {
+  background-color: white;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.queEsCanva {
+  display: flex;
+  justify-content: center;
+  color: #111;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  padding: 32px 0 26px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.textoQueEsCanva {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 17px;
+  font-family: HelveticaNeue, Helvetica !important;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(82, 82, 82);
+  margin-top: 10px;
+}
+
+.imgQueEsCanva {
+  display: flex;
+  justify-content: center;
+}
+
+.mision {
+  display: flex;
+  justify-content: center;
+  color: #111;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  padding: 32px 0 20px;
+  font-size: 22px;
+}
+
+.textoMision {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 17px;
+  font-family: HelveticaNeue, Helvetica !important;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+
+.encontranos {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #111;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  padding: 32px 0 20px;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contenedorMapaNosotros {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenedorMapaNosotros .mapaNosotros {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 467px) {
+  .fondoNoOpaco {
+    width: 467px;
+  }
+}
+@media (min-width: 700px) {
+  .mapaNosotros {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+}
+/*Unete a nosotros*/
+.seParte {
+  color: #111;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 32px 0 26px;
+  text-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.textoSeParte {
+  font-family: HelveticaNeue, Helvetica !important;
+  line-height: 22px;
+  font-weight: 400;
+  padding-bottom: 27px;
+  text-align: center;
+  color: #8d8d8d;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Preguntas1UneteANosotros {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Preguntas1UneteANosotros input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font: 14px helvetica;
+  padding: 5px;
+  color: #8d8d8d;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+}
+.Preguntas1UneteANosotros .textoFechaCumpleaños {
+  text-align: justify;
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 3px 0 24px;
+  text-align: center;
+}
+
+.PoliticasYTerminos {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.PoliticasYTerminos .textoPoliticasYTerminos {
+  text-align: justify;
+  color: #8d8d8d;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 3px 0 24px;
+  text-align: center;
+}
+
+.Unite {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+.Unite .botonUnite {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.IniciarSesion {
+  color: grey;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+.IniciarSesion p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/**/

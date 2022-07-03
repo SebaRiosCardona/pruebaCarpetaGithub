@@ -1,0 +1,12 @@
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: #BFBFBF;
+    display: flex;
+    justify-content: center;
+    font-family: HelveticaNeue,Helvetica!important;
+}
+.footer .p{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+}
