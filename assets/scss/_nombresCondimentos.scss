@@ -1,0 +1,43 @@
+$nombresCondimentos:(
+    AjiCayenaMolido:rgb(194, 17, 7),
+    AjiMolidoSuave:rgb(142, 52, 27),
+    AjiMolido:rgb(195, 96, 22),
+    AjoEnPolvo:rgb(190, 165, 103),
+    AjoGranulado:rgb(251, 207, 155),
+    Albahaca:rgb(133, 131, 81),
+    Bicarbonato:rgb(204, 204, 204),
+    CanelaMolida:rgb(177, 97, 56),
+    Cedron:#fff,
+    Chimichurri:rgb(143, 52, 5),
+    ClavoDeOlorEntero:rgb(195, 103, 68),
+    CominoMolido:rgb(226, 179, 113),
+    CondimentoParaArroz:rgb(197, 142, 35),
+    CondimentoParaPizza:rgb(168, 90, 13),
+    CurcumaMolida:rgb(249, 157, 4),
+    Curry:rgb(185, 121, 41),
+    JengibreMolido:rgb(231, 188, 103),
+    NuezMoscadaEntera:rgb(128, 61, 34),
+    NuezMoscadaMolida:rgb(105, 45, 13),
+    Paprika:rgb(187, 42, 10),
+    Pimenton:rgb(178, 65, 42),
+    PimientaBlancaEnGrano:rgb(171, 156, 133),
+    PimientaBlancaMolida:rgb(231, 214, 180),
+    PimientaNegraEnGrano:rgb(67, 41, 30),
+    PimientaNegraMolida:rgb(91, 68, 59),
+    PimientaMixtaEnGrano:rgb(158, 127, 96),
+    Provenzal:rgb(81, 102, 37),
+    Menta:rgb(183, 227, 80),
+    Oregano:rgb(153, 139, 64),
+    Peperina:rgb(128, 203, 67),
+    Romero:rgb(156, 175, 110),
+    Tomillo:rgb(113, 151, 65),
+);
+
+
+@each $nombre , $color in $nombresCondimentos {
+    .nombre#{$nombre}{
+        background-color: $color;    
+        opacity: 80%;
+        @extend .nombretarjeta
+    } 
+}

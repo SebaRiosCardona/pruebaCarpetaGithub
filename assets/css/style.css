@@ -93,7 +93,7 @@
   padding: 0px;
 }
 
-.nombretarjeta {
+.nombretarjeta, .nombreTomillo, .nombreRomero, .nombrePeperina, .nombreOregano, .nombreMenta, .nombreProvenzal, .nombrePimientaMixtaEnGrano, .nombrePimientaNegraMolida, .nombrePimientaNegraEnGrano, .nombrePimientaBlancaMolida, .nombrePimientaBlancaEnGrano, .nombrePimenton, .nombrePaprika, .nombreNuezMoscadaMolida, .nombreNuezMoscadaEntera, .nombreJengibreMolido, .nombreCurry, .nombreCurcumaMolida, .nombreCondimentoParaPizza, .nombreCondimentoParaArroz, .nombreCominoMolido, .nombreClavoDeOlorEntero, .nombreChimichurri, .nombreCedron, .nombreCanelaMolida, .nombreBicarbonato, .nombreAlbahaca, .nombreAjoGranulado, .nombreAjoEnPolvo, .nombreAjiMolido, .nombreAjiMolidoSuave, .nombreAjiCayenaMolido {
   color: black;
   font-size: 10px;
   backdrop-filter: blur(10px);
@@ -121,7 +121,7 @@
     margin: 57px;
   }
 
-  .nombretarjeta {
+  .nombretarjeta, .nombreTomillo, .nombreRomero, .nombrePeperina, .nombreOregano, .nombreMenta, .nombreProvenzal, .nombrePimientaMixtaEnGrano, .nombrePimientaNegraMolida, .nombrePimientaNegraEnGrano, .nombrePimientaBlancaMolida, .nombrePimientaBlancaEnGrano, .nombrePimenton, .nombrePaprika, .nombreNuezMoscadaMolida, .nombreNuezMoscadaEntera, .nombreJengibreMolido, .nombreCurry, .nombreCurcumaMolida, .nombreCondimentoParaPizza, .nombreCondimentoParaArroz, .nombreCominoMolido, .nombreClavoDeOlorEntero, .nombreChimichurri, .nombreCedron, .nombreCanelaMolida, .nombreBicarbonato, .nombreAlbahaca, .nombreAjoGranulado, .nombreAjoEnPolvo, .nombreAjiMolido, .nombreAjiMolidoSuave, .nombreAjiCayenaMolido {
     color: black;
     font-size: 12px;
     padding-top: 5px;
@@ -133,7 +133,7 @@
     margin: 75px;
   }
 
-  .nombretarjeta {
+  .nombretarjeta, .nombreTomillo, .nombreRomero, .nombrePeperina, .nombreOregano, .nombreMenta, .nombreProvenzal, .nombrePimientaMixtaEnGrano, .nombrePimientaNegraMolida, .nombrePimientaNegraEnGrano, .nombrePimientaBlancaMolida, .nombrePimientaBlancaEnGrano, .nombrePimenton, .nombrePaprika, .nombreNuezMoscadaMolida, .nombreNuezMoscadaEntera, .nombreJengibreMolido, .nombreCurry, .nombreCurcumaMolida, .nombreCondimentoParaPizza, .nombreCondimentoParaArroz, .nombreCominoMolido, .nombreClavoDeOlorEntero, .nombreChimichurri, .nombreCedron, .nombreCanelaMolida, .nombreBicarbonato, .nombreAlbahaca, .nombreAjoGranulado, .nombreAjoEnPolvo, .nombreAjiMolido, .nombreAjiMolidoSuave, .nombreAjiCayenaMolido {
     color: black;
     font-size: 13px;
     padding-top: 5px;
@@ -145,7 +145,7 @@
     margin: 75px;
   }
 
-  .nombretarjeta {
+  .nombretarjeta, .nombreTomillo, .nombreRomero, .nombrePeperina, .nombreOregano, .nombreMenta, .nombreProvenzal, .nombrePimientaMixtaEnGrano, .nombrePimientaNegraMolida, .nombrePimientaNegraEnGrano, .nombrePimientaBlancaMolida, .nombrePimientaBlancaEnGrano, .nombrePimenton, .nombrePaprika, .nombreNuezMoscadaMolida, .nombreNuezMoscadaEntera, .nombreJengibreMolido, .nombreCurry, .nombreCurcumaMolida, .nombreCondimentoParaPizza, .nombreCondimentoParaArroz, .nombreCominoMolido, .nombreClavoDeOlorEntero, .nombreChimichurri, .nombreCedron, .nombreCanelaMolida, .nombreBicarbonato, .nombreAlbahaca, .nombreAjoGranulado, .nombreAjoEnPolvo, .nombreAjiMolido, .nombreAjiMolidoSuave, .nombreAjiCayenaMolido {
     color: black;
     font-size: 14px;
     padding-top: 5px;
@@ -157,7 +157,7 @@
     margin: 110px;
   }
 
-  .nombretarjeta {
+  .nombretarjeta, .nombreTomillo, .nombreRomero, .nombrePeperina, .nombreOregano, .nombreMenta, .nombreProvenzal, .nombrePimientaMixtaEnGrano, .nombrePimientaNegraMolida, .nombrePimientaNegraEnGrano, .nombrePimientaBlancaMolida, .nombrePimientaBlancaEnGrano, .nombrePimenton, .nombrePaprika, .nombreNuezMoscadaMolida, .nombreNuezMoscadaEntera, .nombreJengibreMolido, .nombreCurry, .nombreCurcumaMolida, .nombreCondimentoParaPizza, .nombreCondimentoParaArroz, .nombreCominoMolido, .nombreClavoDeOlorEntero, .nombreChimichurri, .nombreCedron, .nombreCanelaMolida, .nombreBicarbonato, .nombreAlbahaca, .nombreAjoGranulado, .nombreAjoEnPolvo, .nombreAjiMolido, .nombreAjiMolidoSuave, .nombreAjiCayenaMolido {
     color: black;
     font-size: 15px;
     padding-top: 5px;
@@ -491,6 +491,166 @@
   margin-bottom: 20px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.nombreAjiCayenaMolido {
+  background-color: rgb(194, 17, 7);
+  opacity: 80%;
+}
+
+.nombreAjiMolidoSuave {
+  background-color: rgb(142, 52, 27);
+  opacity: 80%;
+}
+
+.nombreAjiMolido {
+  background-color: rgb(195, 96, 22);
+  opacity: 80%;
+}
+
+.nombreAjoEnPolvo {
+  background-color: rgb(190, 165, 103);
+  opacity: 80%;
+}
+
+.nombreAjoGranulado {
+  background-color: rgb(251, 207, 155);
+  opacity: 80%;
+}
+
+.nombreAlbahaca {
+  background-color: rgb(133, 131, 81);
+  opacity: 80%;
+}
+
+.nombreBicarbonato {
+  background-color: rgb(204, 204, 204);
+  opacity: 80%;
+}
+
+.nombreCanelaMolida {
+  background-color: rgb(177, 97, 56);
+  opacity: 80%;
+}
+
+.nombreCedron {
+  background-color: #fff;
+  opacity: 80%;
+}
+
+.nombreChimichurri {
+  background-color: rgb(143, 52, 5);
+  opacity: 80%;
+}
+
+.nombreClavoDeOlorEntero {
+  background-color: rgb(195, 103, 68);
+  opacity: 80%;
+}
+
+.nombreCominoMolido {
+  background-color: rgb(226, 179, 113);
+  opacity: 80%;
+}
+
+.nombreCondimentoParaArroz {
+  background-color: rgb(197, 142, 35);
+  opacity: 80%;
+}
+
+.nombreCondimentoParaPizza {
+  background-color: rgb(168, 90, 13);
+  opacity: 80%;
+}
+
+.nombreCurcumaMolida {
+  background-color: rgb(249, 157, 4);
+  opacity: 80%;
+}
+
+.nombreCurry {
+  background-color: rgb(185, 121, 41);
+  opacity: 80%;
+}
+
+.nombreJengibreMolido {
+  background-color: rgb(231, 188, 103);
+  opacity: 80%;
+}
+
+.nombreNuezMoscadaEntera {
+  background-color: rgb(128, 61, 34);
+  opacity: 80%;
+}
+
+.nombreNuezMoscadaMolida {
+  background-color: rgb(105, 45, 13);
+  opacity: 80%;
+}
+
+.nombrePaprika {
+  background-color: rgb(187, 42, 10);
+  opacity: 80%;
+}
+
+.nombrePimenton {
+  background-color: rgb(178, 65, 42);
+  opacity: 80%;
+}
+
+.nombrePimientaBlancaEnGrano {
+  background-color: rgb(171, 156, 133);
+  opacity: 80%;
+}
+
+.nombrePimientaBlancaMolida {
+  background-color: rgb(231, 214, 180);
+  opacity: 80%;
+}
+
+.nombrePimientaNegraEnGrano {
+  background-color: rgb(67, 41, 30);
+  opacity: 80%;
+}
+
+.nombrePimientaNegraMolida {
+  background-color: rgb(91, 68, 59);
+  opacity: 80%;
+}
+
+.nombrePimientaMixtaEnGrano {
+  background-color: rgb(158, 127, 96);
+  opacity: 80%;
+}
+
+.nombreProvenzal {
+  background-color: rgb(81, 102, 37);
+  opacity: 80%;
+}
+
+.nombreMenta {
+  background-color: rgb(183, 227, 80);
+  opacity: 80%;
+}
+
+.nombreOregano {
+  background-color: rgb(153, 139, 64);
+  opacity: 80%;
+}
+
+.nombrePeperina {
+  background-color: rgb(128, 203, 67);
+  opacity: 80%;
+}
+
+.nombreRomero {
+  background-color: rgb(156, 175, 110);
+  opacity: 80%;
+}
+
+.nombreTomillo {
+  background-color: rgb(113, 151, 65);
+  opacity: 80%;
 }
 
 /**/
