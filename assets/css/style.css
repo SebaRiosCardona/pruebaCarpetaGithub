@@ -60,11 +60,11 @@
   font-size: 20px;
   font-family: Helvetica !important;
 }
-.mainIndex .contenedorLineaSeparacion {
+.contenedorLineaSeparacion {
   display: flex;
   justify-content: center;
 }
-.mainIndex .contenedorLineaSeparacion .lineaSeparacion {
+.contenedorLineaSeparacion .lineaSeparacion {
   width: 90%;
 }
 

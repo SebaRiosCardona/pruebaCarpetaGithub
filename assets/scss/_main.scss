@@ -25,12 +25,12 @@
         font-size: 20px;
         font-family: Helvetica!important;
     }    
-    .contenedorLineaSeparacion{
-        display: flex;
-        justify-content: center;
-        .lineaSeparacion{
-            width: 90%;
-        }
+}
+.contenedorLineaSeparacion{
+    display: flex;
+    justify-content: center;
+    .lineaSeparacion{
+        width: 90%;
     }
 }
 
