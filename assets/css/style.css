@@ -347,8 +347,28 @@
   padding: 32px 0 20px;
   font-size: 22px;
 }
+.vision {
+  display: flex;
+  justify-content: center;
+  color: #111;
+  font-family: Helvetica !important;
+  padding: 32px 0 20px;
+  font-size: 22px;
+}
 
 .textoMision {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 17px;
+  font-family: Helvetica !important;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+.textoVision {
   display: flex;
   width: 100%;
   padding-left: 30px;
