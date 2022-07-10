@@ -1,39 +1,35 @@
 /*index*/
 .mainIndex{ 
     .imagenGrandeCuerpo{
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
-        .botonDeCompra{
+    .botonDeCompra{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 90%;
         height: 45px;
-        font-size: 25px;
-        color: rgb(0, 0, 0);
-        border-radius: 14px;
         border-color:black;
         border-style:ridge;
         text-decoration: none;
-        font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-        font-size: 18px;
         font-weight: 800;
-        }
+        @include propiedadesComunBotones (rgb(0, 0, 0),Helvetica!important,14px,25px)
+    }
     .textoIndex{
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: center;
-    font-size: 20px;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+        font-size: 20px;
+        font-family: Helvetica!important;
     }    
     .contenedorLineaSeparacion{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
         .lineaSeparacion{
-        width: 90%;
+            width: 90%;
         }
     }
 }
@@ -52,7 +48,6 @@
     padding: 0px;
     margin: 0px;
     border: 0 solid transparent;
-
 }
 
 .cadaTarjeta{
@@ -63,7 +58,6 @@
 
 .card-img-overlay{
     padding: 0px;
-    
 }
 
 .nombretarjeta{
@@ -74,13 +68,11 @@
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
-
 }
 
 
 .contenedorMas{
     display: flex;
-    
 }
 .botonMas{
     width: 25px;
@@ -200,7 +192,7 @@
                 .texto{
                     text-align:justify;
                     font-size: 17px;
-                    font-family: HelveticaNeue,Helvetica!important;
+                    font-family: Helvetica!important;
                     line-height: 22px;
                     font-weight: 400;
                     text-align: center;
@@ -289,7 +281,7 @@
     display: flex;
     justify-content: center;
     color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-family: Helvetica!important;
     padding: 32px 0 26px;
     font-weight: 700;
     font-size: 24px;
@@ -300,7 +292,7 @@
     padding-left: 30px;
     padding-right: 30px;
     font-size: 17px;
-    font-family: HelveticaNeue,Helvetica!important;
+    font-family: Helvetica!important;
     line-height: 22px;
     font-weight: 400;
     text-align: center;
@@ -315,7 +307,7 @@
     display: flex;
     justify-content: center;
     color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-family: Helvetica!important;
     padding: 32px 0 20px;
     font-size: 22px;
 }
@@ -325,7 +317,7 @@
     padding-left: 30px;
     padding-right: 30px;
     font-size: 17px;
-    font-family: HelveticaNeue,Helvetica!important;
+    font-family: Helvetica!important;
     line-height: 22px;
     font-weight: 400;
     text-align: center;
@@ -336,7 +328,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-family: Helvetica!important;
     padding: 32px 0 20px;
     font-weight: 700;
     font-size: 20px;
@@ -373,7 +365,7 @@
 /*Unete a nosotros*/
 .seParte{
     color: #111;
-    font-family: TradeGothicforNike365-BdCn,Helvetica!important;
+    font-family: Helvetica!important;
     line-height: 26px;
     margin: 0 auto;
     padding: 32px 0 26px;
@@ -384,7 +376,7 @@
     font-size: 24px;
 }
 .textoSeParte{
-    font-family: HelveticaNeue,Helvetica!important;
+    font-family: Helvetica!important;
     line-height: 22px;
     font-weight: 400;
     padding-bottom: 27px;
@@ -437,13 +429,10 @@
     .botonUnite{
         background-color: #000;
         border: 1px solid #000;
-        border-radius: 4px;
-        color: #fff;
         cursor: pointer;
         display: block;
-        font-family: TradeGothicforNike365-BdCn,Helvetica!important;
-        font-size: 15px;
         padding: 10px;
+        @include propiedadesComunBotones (#fff,Helvetica!important,4px,15px)
     }    
 }
 .IniciarSesion{

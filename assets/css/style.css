@@ -22,7 +22,7 @@
   background-color: #BFBFBF;
   display: flex;
   justify-content: center;
-  font-family: HelveticaNeue, Helvetica !important;
+  font-family: Helvetica !important;
 }
 
 .footer .p {
@@ -49,7 +49,7 @@
   border-color: black;
   border-style: ridge;
   text-decoration: none;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   font-size: 18px;
   font-weight: 800;
 }
@@ -58,7 +58,7 @@
   padding-right: 40px;
   text-align: center;
   font-size: 20px;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
 }
 .mainIndex .contenedorLineaSeparacion {
   display: flex;
@@ -229,7 +229,7 @@
 .contenedorContacto .formulario .elementosFormularioContacto .textoContacto .texto {
   text-align: justify;
   font-size: 17px;
-  font-family: HelveticaNeue, Helvetica !important;
+  font-family: Helvetica !important;
   line-height: 22px;
   font-weight: 400;
   text-align: center;
@@ -314,7 +314,7 @@
   display: flex;
   justify-content: center;
   color: #111;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   padding: 32px 0 26px;
   font-weight: 700;
   font-size: 24px;
@@ -343,7 +343,7 @@
   display: flex;
   justify-content: center;
   color: #111;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   padding: 32px 0 20px;
   font-size: 22px;
 }
@@ -354,7 +354,7 @@
   padding-left: 30px;
   padding-right: 30px;
   font-size: 17px;
-  font-family: HelveticaNeue, Helvetica !important;
+  font-family: Helvetica !important;
   line-height: 22px;
   font-weight: 400;
   text-align: center;
@@ -366,7 +366,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: #111;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   padding: 32px 0 20px;
   font-weight: 700;
   font-size: 20px;
@@ -402,7 +402,7 @@
 /*Unete a nosotros*/
 .seParte {
   color: #111;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   line-height: 26px;
   margin: 0 auto;
   padding: 32px 0 26px;
@@ -414,7 +414,7 @@
 }
 
 .textoSeParte {
-  font-family: HelveticaNeue, Helvetica !important;
+  font-family: Helvetica !important;
   line-height: 22px;
   font-weight: 400;
   padding-bottom: 27px;
@@ -475,7 +475,7 @@
   color: #fff;
   cursor: pointer;
   display: block;
-  font-family: TradeGothicforNike365-BdCn, Helvetica !important;
+  font-family: Helvetica !important;
   font-size: 15px;
   padding: 10px;
 }
@@ -493,6 +493,7 @@
   padding-right: 5px;
 }
 
+/*mixins*/
 .nombreAjiCayenaMolido {
   background-color: rgb(194, 17, 7);
   opacity: 80%;

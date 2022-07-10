@@ -34,6 +34,15 @@ $nombresCondimentos:(
 );
 
 
+/*mixins*/
+@mixin propiedadesComunBotones ($colorLetra,$fuente,$radio,$tamaño){
+    color:$colorLetra;
+    font-family: $fuente;
+    border-radius: $radio;
+    font-size: $tamaño;
+};
+    
+
 @each $nombre , $color in $nombresCondimentos {
     .nombre#{$nombre}{
         background-color: $color;    
@@ -41,3 +50,4 @@ $nombresCondimentos:(
         @extend .nombretarjeta
     } 
 }
+
