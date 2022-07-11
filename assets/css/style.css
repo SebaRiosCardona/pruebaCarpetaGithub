@@ -10,10 +10,22 @@
   padding: 0 !important;
   background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
   height: auto;
+  opacity: 80%;
 }
 
 .colorLetraNavbar {
   color: white;
+}
+.colorLetraNavbar:hover {
+  font-size: 19px;
+  color: white;
+  border: 1px solid black;
+}
+.nav-link{
+  font-size: 20px !important;
+}
+.navbar-nav{
+  font-weight: 500 !important;
 }
 
 .footer {
