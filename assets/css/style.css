@@ -10,22 +10,24 @@
   padding: 0 !important;
   background-image: url(../img/Captura\ de\ Pantalla\ 2022-06-13\ a\ la\(s\)\ 12.48.39.png);
   height: auto;
-  opacity: 80%;
 }
-
+.navbar-toggler {
+  background-color: rgb(227, 227, 227);
+}
+.active {
+  color: rgb(190, 190, 190) !important;
+}
 .colorLetraNavbar {
   color: white;
+
 }
 .colorLetraNavbar:hover {
-  font-size: 19px;
-  color: white;
-  border: 1px solid black;
+  color: rgb(227, 227, 227) !important;
+  font-weight: 450 !important;
 }
-.nav-link{
-  font-size: 20px !important;
-}
-.navbar-nav{
-  font-weight: 500 !important;
+
+.navbar-nav {
+  font-weight: 400 !important;
 }
 
 .footer {
